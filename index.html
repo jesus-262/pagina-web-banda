@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+
+	<title>Rock</title>
+
+	<meta name="description" content="Pagina_Rock">
+	<meta name="jesus" content="Sebas7103">
+
+	<link rel="stylesheet" href="./css/stylesheet.css">
+	<script src="js/jquery_2.1.3.min.js"></script>
+	<script src="js/leContenido.js"></script>
+	<script src="js/jquery.slides.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
+	<script src="js/src.js"></script>
+</head>
+<body >
+	<div class="ir-arriba"></div>
+	
+
+	<header>
+
+	<div class="botoncito" onclick="botoncito(this);">
+	</div>
+		
+
+			
+			<div class="socialNetworks">
+
+				<div id="facebook" ></div>
+				<div id="twitter" ></div>
+				<div id="tagged" ></div>
+			</div>
+			<div id="logo"></div>
+		
+		<nav> 
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="Eventos.html">Eventos</a>
+				</li>
+				<li>
+					<a href="Biografia.html">Galeria</a>
+				</li>
+				<li>
+					<a href="Videos.html">Videos</a>
+				</li>
+				
+			</ul>
+		</nav>
+	</header>
+<div class="main">
+	<div class="slides">
+	<div > 
+	<p style="color: white; font-size: medium; font-style: italic; margin-left:5%; position: absolute; margin-top:50%; font-size: 90%;
+	font-weight: bold;">Metallica en los angeles</p> 
+	<a href="Eventos.html">
+	<img src="img_slider/slider1.jpg"  >
+  </a>
+	</div>
+	
+	<div>
+	<p style="color: white; font-size: medium; font-style: italic; margin-left:5%;  position: absolute; margin-top:50%; font-size: 90%;
+	font-weight: bold;">Nueva cancion de likin park</p> 
+<a href="Biografia.html">
+	<img  src="img_slider/slider2.jpg" >
+	 </a>
+	</div>
+	<div>
+	<p style="color: white; font-size: medium; font-style: italic; margin-left:5%;  position: absolute; margin-top:50%; font-size: 90%;
+	font-weight: bold;">reb regresa con fuerza</p> 
+<a href="Videos.html">
+	<img src="img_slider/slider3.jpg" onclick="slider_metallica(this);">
+</a>
+	</div>
+	</div>
+</div>
+	<div id="content">
+
+	<div id="Reproductor">
+
+			<div class="module">
+			 
+			
+			
+				<div id="audioPlayer">
+					<div class="cover" onmouseover="entro(this);" onmouseout="salio(this);" >
+						<div class="audio_ui_control control_left" onclick="anterior(this);"> </div>
+						<div class="audio_ui_control control_right" onclick="siguiente(this);"> </div>
+						<img id="img_cover" src="" alt="">
+					</div>
+					<div class="controls">
+						<audio id="sonidos"  src="" controls="true"></audio>
+					</div>
+				</div>
+				<div id="musicList">
+					<ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="Publicacion">
+			<section class="noticias">
+			</section>
+			<div id="atras" onclick="atras(this);">Atras</div>
+			<div id="adelante" onclick="adelante(this);">Siguente</div>
+		</div>
+		
+	</div>
+	<footer>
+	<section id="footer_izquierda" >
+
+	<div ALIGN=center><h2>CONTACTO</h2></div>
+	<div ALIGN=center>Ciudad: Cali </div>
+	<div ALIGN=center>Colombia</div>
+	<div ALIGN=center>Tel.: 4426874 </div>
+	<div ALIGN=center>Jesus alberto copete </div>
+	<div ALIGN=center>Email:jac@hotmail.com </div>
+	<div ALIGN=center><a href="index.html">Website: www.rock.com</a> </div>
+	</section>
+	<section id="footer_centro" >
+
+	<div ALIGN=center >Quienes somos</div>
+	<div ALIGN=center>Soporte tecnico</div>
+	<div ALIGN=center>Foros</div>
+	<div ALIGN=center>Politicas de uso</div>
+	<div ALIGN=center>Aviso legal</div>
+	<div ALIGN=center><a href="index.html">Registrate</a> </div>
+	</section>
+	<section id="footer_derecha" >
+	<div ALIGN=center>Deja tu comentario</div>
+	<INPUT TYPE="text" value="Nombre" name="nombre" ><BR>
+	<INPUT TYPE="text" value="Correo" name="nombre" ><BR> 
+	<BR><BR> 
+	<textarea name="comentarios" rows="5" cols="21.5">Escribe aquí tus comentarios</textarea> 
+	<BR><BR> 
+	<INPUT TYPE="submit"><BR>  
+	<div ALIGN=center></div>
+	<div ALIGN=center></div>
+	</section>
+	</footer>
+	
+
+	<style>
+	
+	#logo{
+		background: url("img/metalica_logo.png")   center ;
+	}
+
+	#facebook{
+		background: url("img/logo_facebook.png")   center ;
+	}
+
+	#twitter{
+		background: url("img/logo_twitter.png")   center ;
+	}
+
+	#tagged{
+		background: url("img/logo_tagged.png")   center ;
+	}
+    .ir-arriba{
+		background: url("img/flecha.png")   center ;
+
+    }
+    .botoncito{
+		background: url("img/menu.png")   center ;
+
+    }
+    body{
+		background: url("body/body2.jpg")   top ;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+    }
+    footer{
+		background: url("body/footer.jpg")   top ;
+		
+    }
+
+	#logo,#facebook,#twitter,#tagged,.ir-arriba,
+	.botoncito,footer{
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+
+	}
+
+</style>
+<script type="text/javascript">
+            link = "Index";
+           console.log(link)
+</script>  
+</body>
+</html>
